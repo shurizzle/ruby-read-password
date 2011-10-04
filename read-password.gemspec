@@ -5,7 +5,7 @@ Gem::Specification.new {|g|
     g.email         = 'shura1991@gmail.com'
     g.homepage      = 'http://github.com/shurizzle/ruby-read-password'
     g.platform      = Gem::Platform::RUBY
-    g.description   = 'Read silently password on all ruby implementations and OS'
+    g.description   = 'Silently read a password on all Ruby implementations and platforms'
     g.summary       = g.description
     g.files         = Dir.glob('lib/**/*') + Dir.glob('ext/*')
     g.require_path  = 'lib'
