@@ -1,6 +1,6 @@
 Gem::Specification.new {|g|
     g.name          = 'read-password'
-    g.version       = '0.0.1'
+    g.version       = '0.0.1.1'
     g.author        = 'shura'
     g.email         = 'shura1991@gmail.com'
     g.homepage      = 'http://github.com/shurizzle/ruby-read-password'
