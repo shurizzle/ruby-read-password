@@ -41,11 +41,11 @@ if RUBY_PLATFORM =~ /(?<!dar)win|w32/
 
       res = if (mode & ENABLE_ECHO_INPUT) == ENABLE_ECHO_INPUT
               API.set_console_mode(handle, mode & ~ENABLE_ECHO_INPUT)
-              STDIN.gets.tap {
+              STDIN.gets.chomp.tap {
                 API.set_console_mode(handle, mode)
               }
             else
-              STDIN.gets
+              STDIN.gets.chomp
             end
       STDOUT.puts
 
@@ -73,7 +73,7 @@ else
                 STDIN.echo
               }
             else
-              STDIN.gets
+              STDIN.gets.chomp
             end
 
       STDOUT.puts

@@ -1,9 +1,9 @@
 Gem::Specification.new {|g|
-    g.name          = 'ruby-password'
+    g.name          = 'read-password'
     g.version       = '0.0.1'
     g.author        = 'shura'
     g.email         = 'shura1991@gmail.com'
-    g.homepage      = 'http://github.com/shurizzle/ruby-password'
+    g.homepage      = 'http://github.com/shurizzle/ruby-read-password'
     g.platform      = Gem::Platform::RUBY
     g.description   = 'Read silently password on all ruby implementations and OS'
     g.summary       = g.description

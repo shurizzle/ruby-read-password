@@ -1,21 +1,8 @@
 if RUBY_PLATFORM =~ /(?<!dar)win|w32|java/
   require 'mkmf'
+  require 'fakext'
 
-  lib = 'noecho'
-
-  File.open(File.join(Dir.pwd, 'Makefile'), 'w') {|f|
-    f.write "all:\n\ninstall:\n\n"
-  }
-  if RUBY_PLATFORM =~ /(?<!dar)win|w32/
-    File.open(File.join(Dir.pwd, lib + '.dll'), 'w') {}
-    File.open(File.join(Dir.pwd, 'nmake.bat'), 'w') {}
-  else
-    File.open(File.join(Dir.pwd, 'make'), 'w') {|f|
-      f.write '#!/bin/sh'
-      f.chmod f.stat.mode | 0111
-    }
-    File.open(File.join(Dir.pwd, lib + '.so'), 'w') {}
-  end
+  Gem.fakext('noecho')
 else
   require 'mkmf'
 
