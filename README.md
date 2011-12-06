@@ -1,4 +1,4 @@
-ruby-password
+ruby-read-password
 =============
 
 EXAMPLE:
