@@ -4,7 +4,7 @@ ruby-password
 EXAMPLE:
 
 ```ruby
-require 'ruby-password'
+require 'read-password'
 
 puts Kernel.password('Insert password (not shown): ')
 ```
